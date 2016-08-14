@@ -1,0 +1,46 @@
+{
+  "name": "redux-loggr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w --output-style compressed src/public/scss/ --output src/public/dist/css/",
+    "dev": "npm run sass | npm run webpack",
+    "start_server": "pm2 start src/server/server.js -i 2 -n Redux",
+    "webpack": "NODE_ENV=production webpack --progress --colors --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://JevinAnderson@bitbucket.org/JevinAnderson/redux-loggr.git"
+  },
+  "author": "Jevin Anderson",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/JevinAnderson/redux-loggr#readme",
+  "dependencies": {
+    "autoprefixer": "^6.3.7",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-es2015-classes": "^6.9.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.9.0",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-plugin-transform-proto-to-assign": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "node-sass": "^3.8.0",
+    "path": "^0.12.7",
+    "pm2": "^1.1.3",
+    "postcss": "^5.1.0",
+    "precss": "^1.4.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-redux": "^4.4.5",
+    "ready-and-able": "^1.0.4",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "sass-loader": "^4.0.0",
+    "webpack": "^1.13.1"
+  }
+}
