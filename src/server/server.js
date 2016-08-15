@@ -8,9 +8,6 @@ const { Provider } = require('react-redux');
 
 const { Application, createStore } = require(path.join(__dirname, './../public/dist/js/application/main_application_bundle.js'));
 
-const serverState = {
-  data: 'test data'
-};
 const staticDirectory = __dirname.replace('server', 'public/dist');
 
 const app = express();
@@ -32,8 +29,10 @@ function getBeforeTheFoldCSS(callback) {
   });
 }
 
+var serverState;
 function renderApplication(callback) {
-  const store = createStore(serverState);
+  const store = createStore();
+  serverState = store.getState();
   const data = { store };
 
   const application = React.createElement(Provider, data, React.createElement(Application));
@@ -53,7 +52,7 @@ function printOutputToFile(html) {
 app.get('/application', (req, res) => {
   getBeforeTheFoldCSS(beforeTheFoldCss => {
     const applicationString = renderApplication();
-    const initialState = JSON.stringify(serverState, null, 4);
+    const initialState = JSON.stringify(serverState);
 
     res.render('application', { beforeTheFoldCss, initialState, applicationString }, (error, html) => {
       if (!error) {

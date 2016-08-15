@@ -1,7 +1,7 @@
-function defaultReducer(state = {}) {
-  return state;
-}
+import pages from './pages';
+import posts from './posts';
 
 export default {
-  data: defaultReducer
+  pages,
+  posts
 };

@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import Application from './containers/index';
+import Application from './containers';
 import createStore from './store';
 
 const ApplicationData = {

@@ -1,23 +1,18 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
+import Navigation from '../components/navigation';
+import Posts from '../components/posts';
+import Footer from '../components/footer';
 
 class Application extends Component {
-  constructor(props){
-    super(props);
-    this.state = {};
-  }
-// componentWillMount(){}
-// componentDidMount(){}
-// componentWillReceiveProps(nextProps) {}
-// shouldComponentUpdate(nextProps, nextState) true
-// componentWillUpdate(nextProps, nextState) {}
-// componentDidUpdate(prevProps, prevState) {}
-// componentWillUnmount() {}
-  render(){
+  render() {
+    const { pages, posts } = this.props;
     return (
       <div className="application">
-        Hello world!
+        <Navigation pages={pages} />
+        <Posts posts={posts} />
+        <Footer />
       </div>
     );
   }
@@ -28,7 +23,9 @@ Application.propTypes = {};
 Application.defaultProps = {};
 
 function mapStateToProps(state) {
-  return state;
+  const { pages, posts } = state;
+
+  return { pages, posts };
 }
 
 function mapDispatchToProps(dispatch) {
