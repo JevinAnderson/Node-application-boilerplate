@@ -5,9 +5,9 @@ class Posts extends Component {
   renderAuthor(author) {
     switch(author){
       case 'Jevin':
-        return <a href="https://github.com/JevinAnderson">Jevin</a>;
+        return <a target="__blank" href="https://github.com/JevinAnderson">Jevin</a>;
       case 'Jamela':
-        return <a href="https://www.facebook.com/jamela.barry">Jamela</a>;
+        return <a target="__blank" href="https://www.facebook.com/jamela.barry">Jamela</a>;
     }
   }
 
