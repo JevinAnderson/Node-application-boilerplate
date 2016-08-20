@@ -5,7 +5,7 @@ export default function Sidebar(){
     <div className="col-sm-3 col-sm-offset-1 blog-sidebar">
       <div className="sidebar-module sidebar-module-inset">
         <h4>About</h4>
-        <p>Jevin Anderson is a web and mobile application developer. A <a href="http://missouri.edu/" target="__blank" >Mizzou Alumn</a>, Jevin currently works at <a href="http://recruitingventures.com/" target="__blank" >Recruiting Ventures</a> where he works in front end web development.</p>
+        <p>Jevin Anderson is a web and mobile application developer. A <a href="http://missouri.edu/" target="__blank" >Mizzou Alumni</a>, Jevin currently works at <a href="http://recruitingventures.com/" target="__blank" >Recruiting Ventures</a> where he works in front end web development.</p>
       </div>
     </div>
   );
