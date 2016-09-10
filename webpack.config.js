@@ -65,7 +65,7 @@ loaders.push({
 
 module.exports = [
   {
-    devtool: 'inline-source-map',
+    devtool: process.env.NODE_ENV !== 'production' ? 'inline-source-map' : '',
 
     entry: entry,
 

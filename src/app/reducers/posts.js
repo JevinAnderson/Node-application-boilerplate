@@ -1,5 +1,30 @@
 const posts = [
   {
+    title: 'JSON Resume',
+    meta: 'Saturday, September 10, 2016',
+    author: 'Jevin',
+    data: [
+      {
+        element: 'p',
+        props: {},
+        value: `So occasionally I stalk my colleagues and go through their <a href="https://github.com/" target="__blank">Github</a> accounts. I like to see if there is anything I should be looking into, and am curious what they’ve been up to. A while back, I noticed <a href="https://github.com/jessicacollins" target="__blank">Jessica Collin’s</a> <a href="http://jessicacollins.io/" target="__blank">resume</a>, and liked it quite a bit. My resume has sucked for a long time, and I have never taken the appropriate time to correct this. Thinking she had built it herself I asked her if she minded if I emulated her style. Turns out she hadn’t done it herself, or at least, not the html/css.`
+      }, {
+        element: 'hr'
+      }, {
+        element: 'h3',
+        props: {},
+        value: 'Enter JSON Resume'
+      }, {
+        element: 'p',
+        props: {},
+        value: `Jessica had used the tools from <a href="https://jsonresume.org/" target="__blank">JSON Resume</a> to build her resume. And I think, though I’m not a hiring manager and certainly not a designer, that the finished product was a good one. And so , enter Jevin’s <a href="https://registry.jsonresume.org/JevinAnderson" target="__blank">resume</a>! I used the CLI to both export an <a href="/resume.html" target="__blank">html copy</a>, as well as publish it to their resume registry. It was easy, fast, and now I have my resume on <a href="https://bitbucket.org" target="__blank">version control</a> which is, in my opinion, awesome.`
+      }, {
+        element: 'p',
+        props: {},
+        value: '-Jevin'
+      }
+    ]
+  }, {
     title: 'I feel the need for speed.',
     meta: 'Saturday, August 20, 2016',
     author: 'Jevin',

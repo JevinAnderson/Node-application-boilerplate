@@ -8,6 +8,9 @@ const pages = [
   }, {
     page: 'GitHub',
     url: 'https://github.com/JevinAnderson'
+  }, {
+    page: 'Resume',
+    url: '/resume.html'
   }
 ];
 
