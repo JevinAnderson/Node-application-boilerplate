@@ -1,5 +1,22 @@
 const posts = [
   {
+    title: 'Happy 241st Birthday Marine Corps!',
+    meta: 'Thursday, November 10, 2016',
+    author: 'Jevin',
+    data: [
+      {
+        element: 'p',
+        props: {},
+        value: `Well the title says it all. Happy birthday Devils!. I made a little <a href="/USMC.html" target="__blank">tribute</a> before work this morning. Factoids are on a 20 second loop and are chosen randomly on page load. Enjoy!`
+      }, {
+        element: 'hr'
+      }, {
+        element: 'p',
+        props: {},
+        value: '-Jevin'
+      }
+    ]
+  }, {
     title: 'JSON Resume',
     meta: 'Saturday, September 10, 2016',
     author: 'Jevin',

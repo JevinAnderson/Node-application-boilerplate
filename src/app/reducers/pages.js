@@ -11,6 +11,9 @@ const pages = [
   }, {
     page: 'Resume',
     url: '/resume.html'
+  }, {
+    page: 'USMC',
+    url: '/USMC.html'
   }
 ];
 
